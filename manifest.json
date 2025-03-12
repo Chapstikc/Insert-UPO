@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Auto Insert UPO",
+  "name": "Auto Insert Text",
   "version": "1.0",
   "description": "Automatically inserts a string of text into a specific input box on a website.",
   "permissions": [
@@ -10,6 +10,12 @@
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://smart.quadient.com/#/app/mailroom/shipping"], // Adjusts script to run only on the 'shipping' page of Quadient SMART
+      "js": ["content.js"]
+    }
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
