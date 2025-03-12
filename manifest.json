@@ -12,7 +12,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://smart.quadient.com/#/app/mailroom/shipping"], // Adjusts script to run only on the 'shipping' page of Quadient SMART
+      "matches": ["https://smart.quadient.com/#/app/mailroom/shipping"],
       "js": ["content.js"]
     }
   ],
