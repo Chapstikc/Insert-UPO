@@ -10,21 +10,5 @@ function insertText() {
   }
 }
 
-// Set up a MutationObserver to monitor the DOM for changes
-const observer = new MutationObserver((mutationsList) => {
-  for (const mutation of mutationsList) {
-    if (mutation.type === 'childList') {
-      // Check if the "Business Unit" input box has been added to the DOM
-      insertText();
-    }
-  }
-});
-
-// Start observing the document body for changes
-observer.observe(document.body, {
-  childList: true, // Observe changes to child elements
-  subtree: true, // Observe all descendants of the body
-});
-
-// Run the insertText function once when the script is first injected
-insertText();
+// Check for the input box every 500 milliseconds
+setInterval(insertText, 500);
