@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Auto Insert Text",
+    "name": "Insert UPO",
     "version": "1.0",
-    "description": "Automatically inserts a string of text into a specific input box on a website.",
+    "description": "Automatically inserts UPO into the Business Unit section of every Quadient shipment.",
     "permissions": [
         "activeTab",
         "scripting",
