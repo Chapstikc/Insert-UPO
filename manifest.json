@@ -14,7 +14,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://smart.quadient.com/#/app/mailroom/shipping"
+                "https://smart.quadient.com/*"
             ],
             "js": [
                 "content.js"
